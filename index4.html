@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEALTH360 | Health Dashboard</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #172b4d;
+        }
+
+        header {
+            background: #102b46;
+            color: white;
+            padding: 20px 35px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        header h1 {
+            font-size: 26px;
+            letter-spacing: 1px;
+        }
+
+        header span {
+            color: #48d6b5;
+        }
+
+        header p {
+            font-size: 13px;
+            color: #cbd5e1;
+        }
+
+        .container {
+            padding: 25px;
+        }
+
+        .welcome {
+            margin-bottom: 22px;
+        }
+
+        .welcome h2 {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+
+        .welcome p {
+            color: #64748b;
+            font-size: 14px;
+        }
+
+        .dashboard {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            padding: 10px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 800px;
+            border: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #64748b;
+            font-size: 13px;
+        }
+
+        @media(max-width: 600px) {
+            header {
+                padding: 18px;
+            }
+
+            .container {
+                padding: 12px;
+            }
+
+            iframe {
+                height: 650px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>HEALTH<span>360</span></h1>
+        <p>Healthcare Analytics & Insights Dashboard</p>
+    </header>
+
+    <div class="container">
+
+        <div class="welcome">
+            <h2>Health360 Dashboard</h2>
+            <p>
+                Explore healthcare data, visualize health trends
+                and analyze important health indicators.
+            </p>
+        </div>
+
+        <div class="dashboard">
+
+            <iframe
+                src="https://public.tableau.com/views/healthdashboard_17936389944180/HEALTH360DASHBOARD?:showVizHome=no&:embed=true"
+                allowfullscreen>
+            </iframe>
+
+        </div>
+
+    </div>
+
+    <footer>
+        © 2026 HEALTH360 | Healthcare Analytics Dashboard
+    </footer>
+
+</body>
+</html>
